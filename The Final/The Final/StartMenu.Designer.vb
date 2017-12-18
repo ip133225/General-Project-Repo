@@ -22,41 +22,39 @@ Partial Class StartMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnNew = New System.Windows.Forms.Label()
-        Me.btnLoad = New System.Windows.Forms.Label()
+        Me.btnStartPause = New System.Windows.Forms.Label()
+        Me.btnReset = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Label()
         Me.picMainMenu = New System.Windows.Forms.PictureBox()
         CType(Me.picMainMenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnNew
+        'btnStartPause
         '
-        Me.btnNew.AutoSize = True
-        Me.btnNew.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.btnNew.Location = New System.Drawing.Point(545, 235)
-        Me.btnNew.Name = "btnNew"
-        Me.btnNew.Size = New System.Drawing.Size(62, 15)
-        Me.btnNew.TabIndex = 0
-        Me.btnNew.Text = "New Game"
-        Me.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnStartPause.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.btnStartPause.Location = New System.Drawing.Point(150, 375)
+        Me.btnStartPause.Name = "btnStartPause"
+        Me.btnStartPause.Size = New System.Drawing.Size(93, 34)
+        Me.btnStartPause.TabIndex = 0
+        Me.btnStartPause.Text = "Start Game"
+        Me.btnStartPause.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnLoad
+        'btnReset
         '
-        Me.btnLoad.AutoSize = True
-        Me.btnLoad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.btnLoad.Location = New System.Drawing.Point(545, 285)
-        Me.btnLoad.Name = "btnLoad"
-        Me.btnLoad.Size = New System.Drawing.Size(64, 15)
-        Me.btnLoad.TabIndex = 1
-        Me.btnLoad.Text = "Load Game"
-        Me.btnLoad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReset.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.btnReset.Location = New System.Drawing.Point(312, 375)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(93, 34)
+        Me.btnReset.TabIndex = 1
+        Me.btnReset.Text = "Reset Game"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnExit
         '
         Me.btnExit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.btnExit.Location = New System.Drawing.Point(545, 335)
+        Me.btnExit.Location = New System.Drawing.Point(486, 375)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(62, 15)
+        Me.btnExit.Size = New System.Drawing.Size(93, 34)
         Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "Exit"
         Me.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -66,7 +64,7 @@ Partial Class StartMenu
         '
         Me.picMainMenu.Image = Global.WindowsApplication1.My.Resources.Resources.menu_background
         Me.picMainMenu.InitialImage = Nothing
-        Me.picMainMenu.Location = New System.Drawing.Point(-11, -2)
+        Me.picMainMenu.Location = New System.Drawing.Point(12, -3)
         Me.picMainMenu.Name = "picMainMenu"
         Me.picMainMenu.Size = New System.Drawing.Size(743, 560)
         Me.picMainMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -79,19 +77,18 @@ Partial Class StartMenu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(720, 555)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnLoad)
-        Me.Controls.Add(Me.btnNew)
+        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.btnStartPause)
         Me.Controls.Add(Me.picMainMenu)
         Me.Name = "StartMenu"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "Form1"
         CType(Me.picMainMenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnNew As System.Windows.Forms.Label
-    Friend WithEvents btnLoad As System.Windows.Forms.Label
+    Friend WithEvents btnStartPause As System.Windows.Forms.Label
+    Friend WithEvents btnReset As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Label
     Friend WithEvents picMainMenu As System.Windows.Forms.PictureBox
 

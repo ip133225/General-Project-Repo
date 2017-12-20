@@ -61,21 +61,21 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''  Looks up a localized resource of type System.Byte[].
         '''</summary>
-        Friend ReadOnly Property download() As System.Drawing.Bitmap
+        Friend ReadOnly Property _2001__A_Space_Odyssey_2001__A_Space_Odyssey_Theme_song_www_my_free_mp3_net() As Byte()
             Get
-                Dim obj As Object = ResourceManager.GetObject("download", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Dim obj As Object = ResourceManager.GetObject("_2001__A_Space_Odyssey_2001__A_Space_Odyssey_Theme_song_www_my_free_mp3_net", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property menu_background() As System.Drawing.Bitmap
+        Friend ReadOnly Property download() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("menu background", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("download", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

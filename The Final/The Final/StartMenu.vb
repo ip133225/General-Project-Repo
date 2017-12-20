@@ -1,8 +1,9 @@
 ﻿Public Class StartMenu
 
+
     Private Sub btnStartPause_Click(sender As Object, e As EventArgs) Handles btnStartPause.Click
 
-            btnStartPause.Text = btnStartPause.Text = "Start" ? "Pause" : "Start"
+        btnStartPause.Text = btnStartPause.Text = "Start" And "Pause"
         If (btnStartPause.Text = "Start") Then
 
             MessageBox.Show("Pause code")
@@ -33,3 +34,4 @@
         Application.Restart()
     End Sub
 
+End Class
